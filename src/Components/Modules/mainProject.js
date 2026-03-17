@@ -4,10 +4,10 @@ import Marquee from "react-fast-marquee";
 class MainProject extends Component {
   render() {
     return (
-      <div className=" mt-48 relative h-[300vh] md:h-[100vh]  bg-background-color font-hack font-extrabold ">
+      <div id="section-start" className=" mt-48 relative h-[300vh] md:h-[100vh]  bg-background-color font-hack font-extrabold ">
         <div className="absolute w-[99vw] text-gray-50 text-5xl">
-          <div class="pt-6 mt-44 xl:mt-0 absolute w-full h-full flex justify-center items-center z-10 gap-24 flex-w flex-wrap">
-            <div className=" relative w-[350px] h-[30%] xl:h-[50%] bg-[#101212] rounded-3xl shadow-2xl shadow-accent-color ">
+          <div id="section-cards" class="pt-6 mt-44 xl:mt-0 absolute w-full h-full flex justify-center items-center z-10 gap-24 flex-w flex-wrap">
+            <div id="card-encrypt" className=" relative w-[350px] h-[30%] xl:h-[50%] bg-[#101212] rounded-3xl shadow-2xl shadow-accent-color ">
               <div className=" flex justify-center  text-xl flex-row gap-2 bg-[#1a1d1d] rounded-t-3xl  pt-1 pb-2  italic font-bold">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rustacean-orig-noshadow.svg/1200px-Rustacean-orig-noshadow.svg.png"
@@ -45,7 +45,7 @@ class MainProject extends Component {
               </div>
             </div>
 
-            <div className="flex-col gap-4 flex relative w-[350px] h-[30%] xl:h-[50%] bg-[#101212] rounded-3xl shadow-2xl shadow-accent-color ">
+            <div id="card-keys" className="flex-col gap-4 flex relative w-[350px] h-[30%] xl:h-[50%] bg-[#101212] rounded-3xl shadow-2xl shadow-accent-color ">
               <div className="flex justify-center pt-2 pb-2 text-xl flex-row bg-[#1a1d1d] rounded-t-3xl    italic font-bold">
                 keys.dnk
               </div>
@@ -78,7 +78,7 @@ class MainProject extends Component {
               </div>
             </div>
 
-            <div className=" relative w-[350px] h-[30%] xl:h-[50%] bg-[#101212] rounded-3xl shadow-2xl shadow-accent-color ">
+            <div id="card-decrypt" className=" relative w-[350px] h-[30%] xl:h-[50%] bg-[#101212] rounded-3xl shadow-2xl shadow-accent-color ">
               <div className=" flex justify-center  text-xl flex-row gap-2 bg-[#1a1d1d] rounded-t-3xl  pt-1 pb-2  italic font-bold">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rustacean-orig-noshadow.svg/1200px-Rustacean-orig-noshadow.svg.png"
@@ -117,7 +117,7 @@ class MainProject extends Component {
               </div>
             </div>
 
-            <div className="pb-6 items-center flex flex-col">
+            <div id="section-info" className="pb-6 items-center flex flex-col">
               <div className="pb-4 w-[350px] mb-2 font-bold flex flex-col ">
                 Denk <span className="text-accent-color">Cipherer</span>
                 <div className="text-sm text-gray-400 mt-4 bg-[#101212] shadow-lg shadow-accent-color rounded-3xl  p-4">
@@ -127,6 +127,7 @@ class MainProject extends Component {
               </div>
 
               <a
+                id="section-cta"
                 className="items-center justify-center bg-[#1d1d1d] rounded-3xl w-56 h-12 text-2xl flex-row flex"
                 href="https://github.com/Norvikk/Rustic_Denk"
                 target="_blank"
@@ -141,7 +142,7 @@ class MainProject extends Component {
             </div>
           </div>
 
-          <div className="mt-96 xl:mt-0">
+          <div id="section-marquee" className="mt-96 xl:mt-0">
             {lines.map((line, index) => (
               <Marquee
                 key={index}
